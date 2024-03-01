@@ -4,12 +4,13 @@
   vars:
     disconnected_mode: "true"
   tasks:
-    - name: disconnected mode on ==> "{{ disconnected_mode }}"
-      command: >-
-        hammer settings set --name subscription_connection_enabled --value {{ disconnected_mode }}
-      register: hammer_disconnect
-      ignore_errors: true
+#    - name: disconnected mode on ==> "{{ disconnected_mode }}"
+#      command: >-
+#        hammer settings set --name subscription_connection_enabled --value {{ disconnected_mode }}
+#      register: hammer_disconnect
+#      ignore_errors: true
 
     - name: hammer disconnected mode switch output 
       debug:
-        msg: "{{ hammer_disconnect }}"
+#        msg: "{{ hammer_disconnect }}"
+        msg: "This task currently commented out"
